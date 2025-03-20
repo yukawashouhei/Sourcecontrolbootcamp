@@ -13,10 +13,32 @@ struct ContentView: View {
             Image(systemName: "heart.fill")
                 .font(.largeTitle)
                 .foregroundStyle(.tint)
+            
+                .padding()
+            
             Text("Swiftful thinking!")
+                .padding()
+            Button {
+                // ボタンがタップされた時のアクション（ここでは何もしていません）
+                print("Sub Now tapped!")
+            } label: {
+                Text("Sub Now")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
+            .padding(.top) // 少しスペースを空ける
+            
+            Rectangle()
+                .fill(Color.black)
+                .frame(width: 500, height: 500)
+                .padding(.top) // 少しスペースを空ける
         }
         .padding()
     }
+    
 }
 
 #Preview {
