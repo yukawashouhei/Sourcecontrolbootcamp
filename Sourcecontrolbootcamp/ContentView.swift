@@ -13,6 +13,9 @@ struct ContentView: View {
             Image(systemName: "heart.fill")
                 .font(.largeTitle)
                 .foregroundStyle(.tint)
+            
+                .padding()
+            
             Text("Swiftful thinking!")
         }
         .padding()
