@@ -14,6 +14,10 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundStyle(.tint)
             
+            Image(systemName: "star.fill")
+                .font(.largeTitle)
+                .foregroundStyle(.yellow)
+            
                 .padding()
             
             Text("Swiftful thinking!")
